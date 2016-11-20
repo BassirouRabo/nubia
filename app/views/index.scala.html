@@ -1,0 +1,153 @@
+@header("Accueil")
+
+<body>
+
+<nav id="main-nav" class="navbar navbar-fixed-top affix-top wow slideInDown">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img src="@routes.Assets.at("img/logo1.png")" alt=""></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+        @menu()
+        </div>
+    </div>
+</nav>
+
+
+<div class="slider-r">
+    <div id="mainslider">
+        <div class="slider">
+            <div class="fullscreen-container">
+                <div class="fullscreenbanner">
+                    <ul>
+                        <li data-transition="fade" data-slotamount="0">
+                            <img alt="#" src="@routes.Assets.at("img/slider/1.jpg")"/>
+                            <div class="caption sfb"
+                                 data-x="center"
+                                 data-y="center"
+                                 data-speed="1000"
+                                 data-start="1000"
+                                 data-easing="easeOutExpo">
+                                <div class="slider-text text-center">
+                                    <h1 class="text-center">
+                                        Association
+                                    </h1>
+                                    <h2 class="text-center">NUBIA</h2>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-transition="slide" data-slotamount="10">
+                            <img alt="#" src="@routes.Assets.at("img/slider/3.jpg")"/>
+                            <div class="caption sfb sl3"
+                                 data-x="left"
+                                 data-y="center"
+                                 data-speed="1000"
+                                 data-start="1000"
+                                 data-easing="easeOutExpo">
+
+                                <div class="slider-center">
+                                    <div class="spon-child text-center">
+                                        <h2>Newsletter</h2>
+                                        <span class="droid">En mettant en place des outils de communication performants, vitrine de l’association.</span>
+                                    </div>
+                                    <div class="child-info">
+                                        <div class="child-fill-info">
+                                            <form method="post" action="">
+                                                <input type="text" class="form-control" placeholder="Nom">
+                                                <input type="email" class="form-control" placeholder="Email">
+                                                <div class="choose-option mt10">
+                                                    <select class="selectpicker form-control" title="Pays">
+                                                        <option>Albanie</option>
+                                                        <option>Amerique</option>
+                                                        <option>Niger</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mt30 text-center">
+                                                    <button type="submit" class="btn-orange-ol">S'inscrire</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="child-spon-details text-center">
+                                            <h1>Nubia</h1>
+                                            <p>Après dix années de sommeil, Nubia renaît ! Nous accueillons en notre
+                                                sein : auteurs, peintres, sculpteurs, designers etc. souhaitant faire
+                                                connaître leurs œuvres et participer à la promotion de la culture
+                                                africaine.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section>
+    <div class="container wow fadeIn">
+        <div class="row">
+
+            <div class="col-sm-3 text-center help-ways">
+                <img src="@routes.Assets.at("img/event.png")" alt="">
+                <h2>Nubia se modernise !</h2>
+            </div>
+
+            <div class="col-sm-3 text-center help-ways">
+                <img src="@routes.Assets.at("img/heart.png")" alt="">
+                <h2>Nubia est accessible !</h2>
+            </div>
+
+            <div class="col-sm-3 text-center help-ways">
+                <img src="@routes.Assets.at("img/event.png")" alt="">
+                <h2>Nubia se modernise !</h2>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="numbers-saved wow slideInDown">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 numbers text-center">
+                    <h4><span class="stat-count" data-count="6">6</span></h4>
+                    <p>Culture Africaine et Tradition Orale</p>
+                </div>
+                <div class="col-md-2 numbers text-center">
+                    <h4><span class="stat-count" data-count="5">5</span></h4>
+                    <p>Histoire et Sciences Politiques</p>
+                </div>
+                <div class="col-md-2 numbers text-center">
+                    <h4><span class="stat-count" data-count="4">4</span></h4>
+                    <p>Jeunesses</p>
+                </div>
+                <div class="col-md-2 numbers text-center">
+                    <h4><span class="stat-count" data-count="8">8</span></h4>
+                    <p>Langages Africaines</p>
+                </div>
+                <div class="col-md-2 numbers text-center">
+                    <h4><span class="stat-count" data-count="5">5</span></h4>
+                    <p>Poesie</p>
+                </div>
+                <div class="col-md-2 numbers text-center">
+                    <h4><span class="stat-count" data-count="4">4</span></h4>
+                    <p>Theatre</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    @footer()

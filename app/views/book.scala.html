@@ -1,0 +1,72 @@
+@import java.util
+@(bookSingle: Book, books: util.List[Book])
+
+@header("Livre titre")
+
+<body>
+
+    <nav id="main-nav-h" class="navbar navbar-fixed-top default affix wow slideInDown">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand" href="/"><img src="@routes.Assets.at("img/logo1.png")" alt=""></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+        @menu()
+        </div>
+      </div>
+    </nav>
+
+<section class="mt160">
+  <div class="container wow slideInDown">
+    <div class="row">
+      <div class="col-md-12">
+          <h1><a href="/catalogs/@bookSingle.getCategory/books" title="" >@bookSingle.getCategory</a> </h1>
+      </div>
+    </div>
+    <div class="row mt30">
+      <div class="col-md-8 mb20">
+        <img src="@routes.Assets.at("img/product-detail.jpg")" alt="" class="img-responsive">
+          <h3>@bookSingle.getTitle</h3>
+          <p>@bookSingle.getDescription</p>
+      </div>
+      <div class="col-md-4">
+
+          @for(book <- books) {
+              @if(book != bookSingle) {
+                  @if(books.get(0) == book) {
+                      <div class="sidebar-product product text-center">
+                          <img class="img-responsive" src="@routes.Assets.at("img/shop1.jpg")" alt="">
+                          <h5 class="text-uppercase">Educational toys for kids</h5>
+                          <div class="clearfix">  </div>
+                          <div class="shop-cart">
+                              <a href="/catalogs/@book.getCategory/books/@book.getId">Lire la suite</a>
+                          </div>
+                          <div class="clearfix"></div>
+                      </div>
+                  } else {
+                      <div class="sidebar-product text-center product mt40">
+                          <img class="img-responsive" src="@routes.Assets.at("img/shop2.jpg")" alt="">
+                          <h5 class="text-uppercase">adult literacy classes</h5>
+                          <div class="clearfix">  </div>
+                          <div class="shop-cart">
+                              <a href="/catalogs/@book.getCategory/books/@book.getId">Lire la suite</a>
+                          </div>
+                      </div>
+                  }
+              }
+
+          }
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+    @footer()

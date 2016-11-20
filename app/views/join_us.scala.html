@@ -1,0 +1,141 @@
+@header("Nous rejoindre")
+
+<body>
+
+<nav id="main-nav-h" class="navbar navbar-fixed-top default affix wow slideInDown">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img src="@routes.Assets.at("img/logo1.png")" alt=""></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+        @menu()
+        </div>
+    </div>
+</nav>
+
+<section class="mt160">
+    <div class="container">
+        <div class="row wow slideInDown">
+            <div class="col-md-12">
+                <h1>Envoyez votre manuscrit </h1>
+            </div>
+            <div class="row mt30">
+                <div class="col-md-12 wow fadeIn">
+                    <h2>Faites éditer votre livre, envoyez votre manuscrit en toute confiance</h2>
+                    <div class="contact-us mt50">
+                        <div class="row mt30">
+                            <div class="col-md-8">
+                                <form action="#" method="post">
+                                    <div class="fl-name row">
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" placeholder="Prenom *">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" placeholder="Nom *">
+                                        </div>
+                                    </div>
+                                    <div class="fl-name row">
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" placeholder="Adresse *">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" placeholder="Code postal *">
+                                        </div>
+                                    </div>
+                                    <div class="fl-name row">
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" placeholder="Pays *">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" placeholder="Ville *">
+                                        </div>
+                                    </div>
+                                    <div class="fl-name row">
+                                        <div class="col-md-6">
+                                            <input type="email" class="form-control" placeholder="Email *">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" placeholder="Site internet">
+                                        </div>
+                                    </div>
+                                    <div class="fl-name row">
+                                        <div class="col-md-6">
+                                            <input type="file" class="form-control"
+                                                   placeholder="Joindre le manuscrit *">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" placeholder="Titre du livre *">
+                                        </div>
+                                    </div>
+                                    <textarea name="your-message" id="resume" rows="10" class="form-control"
+                                              placeholder="Résumé du livre"></textarea>
+                                    <textarea name="your-message" id="auteur" rows="10" class="form-control"
+                                              placeholder="Informations sur l'auteur"></textarea>
+                                    <div class="mt30">
+                                        <button type="submit" class="btn-orange">Envoyer</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="cotact-details mb30 mt10">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <i class="fa fa-map-marker orange"></i> <span
+                                                class="text-bold"> Adresse:</span>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <span>68, bd de Port Royal 75005 Paris</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cotact-details mb30">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <i> <img src="@routes.Assets.at("img/envelope.png")" alt=""></i> <span
+                                                class="text-bold"> E-mail:</span>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <span>info@@assonubia.org</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cotact-details mb30">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <i class="fa fa-phone orange"></i> <span
+                                                class="text-bold"> Telephone:</span>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <span>+ 33 6 24 39 65 03</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cotact-details mb30">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <i><img src="@routes.Assets.at("img/fax.png")" alt=""></i> <span
+                                                class="text-bold"> Télécopie:</span>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <span>+ 33 1 45 35 81 00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+    @footer()

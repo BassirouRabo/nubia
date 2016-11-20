@@ -1,0 +1,101 @@
+
+
+@header("Nous contacter")
+
+<body>
+
+    <nav id="main-nav-h" class="navbar navbar-fixed-top default affix wow slideInDown">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="@routes.Assets.at("img/logo1.png")" alt=""></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+        @menu()
+        </div>
+      </div>
+    </nav>
+
+<section class="mt160">
+  <div class="container">
+    <div class="row wow slideInDown">
+    <div class="row mt30">
+      <div class="col-md-12 wow fadeIn">
+        <h2>Nous Contacter</h2>
+        <div class="contact-us mt50">
+          <div class="row mt30">
+            <div class="col-md-8">
+              <form action="#" method="post">
+                <div class="fl-name row">
+                  <div class="col-md-6">
+                    <input name="nome" type="text" class="form-control" placeholder="Nom">
+                  </div>
+                  <div class="col-md-6">
+                    <input name="telephone" type="tel" class="form-control" placeholder="Telephone">
+                  </div>
+                </div>
+                <input type="text" class="form-control" placeholder="Objet">
+                <textarea name="your-message" id="message" rows="10" class="form-control"
+                          placeholder="Message"></textarea>
+              <div class="mt30">
+                <button type="submit" class="btn-orange">Envoyer</button>
+              </div>
+              </form>
+            </div>
+            <div class="col-md-4">
+              <div class="cotact-details mb30 mt10">
+                <div class="row">
+                  <div class="col-md-5">
+                    <i class="fa fa-map-marker orange"></i> <span class="text-bold"> Adresse:</span>
+                  </div>
+                  <div class="col-md-7">
+                    <span>68, bd de Port Royal 75005 Paris</span>
+                  </div>
+                </div>
+              </div>
+              <div class="cotact-details mb30">
+                <div class="row">
+                  <div class="col-md-5">
+                    <i> <img src="@routes.Assets.at("img/envelope.png")" alt=""></i> <span class="text-bold"> E-mail:</span>
+                  </div>
+                  <div class="col-md-7">
+                    <span>info@@assonubia.org</span>
+                  </div>
+                </div>
+              </div>
+              <div class="cotact-details mb30">
+                <div class="row">
+                  <div class="col-md-5">
+                    <i class="fa fa-phone orange"></i> <span class="text-bold"> Telephone:</span>
+                  </div>
+                  <div class="col-md-7">
+                    <span>+ 33 6 24 39 65 03</span>
+                  </div>
+                </div>
+              </div>
+              <div class="cotact-details mb30">
+                <div class="row">
+                  <div class="col-md-5">
+                    <i><img src="@routes.Assets.at("img/fax.png")" alt=""></i> <span class="text-bold"> Télécopie:</span>
+                  </div>
+                  <div class="col-md-7">
+                    <span>+ 33 1 45 35 81 00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  </div>
+</section>
+
+  @footer()

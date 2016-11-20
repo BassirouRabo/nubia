@@ -1,0 +1,115 @@
+@header("L'histoire de Nubia")
+
+<body>
+
+
+    <nav id="main-nav-h" class="navbar navbar-fixed-top default affix wow slideInDown">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="@routes.Assets.at("img/logo1.png")" alt=""></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          @menu()
+        </div>
+      </div>
+    </nav>
+
+<section class="mt160">
+  <div class="container wow fadeIn">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>L'histoire de Nubia</h1>
+      </div>
+    </div>
+  </div>
+
+</section>
+<section>
+    <div id="projects-help" class=" wow slideInDown">
+      <div class="item">
+        <div class="row">
+          <div class="col-md-7">
+            <img class="img-responsive" src="@routes.Assets.at("img/project-girl.jpg")" alt="">
+          </div>
+          <div class="col-md-5">
+            <div class="project-description">
+              <h3>Nubia</h3>
+              <p>est une association culturelle crée en Novembre 1974 à Paris par des universitaires soucieux de
+                contribuer à la promotion de la culture africaine dans toutes ses manifestations traditionnelles et
+                contemporaines. Ils avaient pour but d’encourager la recherche, l’éducation scolaire et universitaire
+                par le biais de l’édition et de la diffusion. </p>
+
+              <a class="btn btn-orange" href="#">Lire la suite</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</section>
+<section>
+  <div class="container wow fadeIn">
+    <div class="row">
+      
+      <div class="col-sm-3 text-center help-ways">
+        <img src="@routes.Assets.at("img/event.png")" alt="">
+        <h2>Nubia se modernise !</h2>
+        <hr>
+        <p>En mettant en place des outils de communication performants, vitrine de l’association.</p>
+      </div>
+      
+      <div class="col-sm-3 text-center help-ways">
+        <img src="@routes.Assets.at("img/event.png")" alt="">
+        <h2>Nubia est accessible !</h2>
+        <hr>
+        <p>Nos ouvrages sont disponibles sur le site Internet « soumbala.com », à la librai- rie Anibwé (Paris) et
+          bientôt à travers le monde.</p>
+      </div>
+
+      <div class="col-sm-3 text-center help-ways">
+        <img src="@routes.Assets.at("img/event.png")" alt="">
+        <h2>Nubia renaît !</h2>
+        <hr>
+        <p>Bien sûr l’idée de base reste omniprésente dans l’objet de l’association mais une ouverture est faite sur la
+          culture africaine dans sa globalité. </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div id="find-us" class="wow slideInDown">
+    <div class="item">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="find-img">
+            <img src="@routes.Assets.at("img/find-us.jpg")" alt="">
+          </div>
+          <div class="find-text text-center">
+            <div class="spot-heading">
+              <h1>Nubia</h1>
+            </div>
+            <div class="find-details">
+              <p> Nous sommes heureux de vous accueillir pour vous faire partager une Afrique en lettres et en
+                culture.</p>
+            </div>
+          </div>
+          <div class="find-quote">
+            <p>Nous accueillons en notre sein : auteurs, peintres, sculpteurs, designers... souhaitant faire connaître
+              leurs œuvres et participer à la promotion de la culture africaine.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  @footer()

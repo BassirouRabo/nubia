@@ -1,0 +1,20 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+
+GET     /                                       controllers.HomeController.index
+GET     /about                                  controllers.HomeController.about
+GET     /teams                                  controllers.HomeController.teams
+GET     /contact-us                             controllers.HomeController.contact
+GET     /join-us                                controllers.HomeController.join
+GET     /catalogs                               controllers.HomeController.catalogs
+GET     /catalogs/:nomCatalog/books             controllers.BookController.readsByCatalog(nomCatalog: String)
+GET     /catalogs/:nomCatalog/books/:id         controllers.BookController.readByCatalog(nomCatalog: String, id: Long)
+
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
+    

@@ -1,0 +1,10 @@
+Accueil : index.html
+L'histoire de nubia : about.html
+Membres : team.html , team-detail.html
+Catalogue : projects.html, product-list.html, product-detail-v1.html
+Rejoignez-nous : contact-us.html
+Deposez-vos manuscrits
+Contact : contact-us.html
+
+
+"org.hibernate" % "hibernate-entitymanager" % "5.1.0.Final",
