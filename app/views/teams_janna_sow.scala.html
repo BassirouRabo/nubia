@@ -1,0 +1,59 @@
+@header("Bureau et Conseil d'administration")
+
+<body>
+  <nav id="main-nav-h" class="navbar navbar-fixed-top default affix wow slideInDown">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+        aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><img src="@routes.Assets.at("img/logo1.png")" alt=""></a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+      @menu()
+      </div>
+    </div>
+  </nav>
+
+
+
+    <section class="mt160">
+        <div class="container wow slideInDown">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Le Bureau</h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="row mt50 gray-bg">
+                <div class="col-md-3">
+                    <img src="@routes.Assets.at("img/our-team/janna-sow.jpg")" alt="" class="img-responsive">
+                </div>
+                <div class="col-md-9">
+                    <h1 class="mt40">Profile Detail</h1>
+                    <ul class="list-unstyled profile-detail">
+                        <li>Nom :<span class="pull-right">Janna Sow</span></li>
+                        <li>Poste :<span class="pull-right">Présidente</span></li>
+                        <li>Email :<span class="pull-right">janna.sow@@associationnubia.com</span></li>
+                    </ul>
+                    <div class="clearfix visible-xs-block"></div>
+                </div>
+            </div>
+            <div class="row mt50">
+                <div class="col-md-12">
+                    <p class="text-left">Après des études de Droit et de communication, Janna a occupé des postes d’Executive assistant et Office Manager dans de grandes entreprises francophones et anglophones.</p>
+                    <p class="text-left">En 2016, elle a décidé de se consacrer entièrement à sa mission de Présidente de Nubia et à ses activités entrepreneuriales. </p>
+                    <p class="text-left">Parisienne originaire d’Afrique de l’Ouest, Janna a la profonde conviction que « quand on sait d’où on vient on sait où on va »   et c’est ce qui la motive à apporter sa contribution à la transmission de la culture négro-africaine.</p>
+                    <hr class="thin">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+@footer()

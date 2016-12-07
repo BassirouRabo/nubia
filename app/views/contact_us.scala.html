@@ -26,32 +26,57 @@
     <div class="row wow slideInDown">
     <div class="row mt30">
       <div class="col-md-12 wow fadeIn">
-        <h2>Nous Contacter</h2>
+        <h5 class="fz-16" >Vos questions</h5>
+        <hr>
         <div class="contact-us mt50">
           <div class="row mt30">
-            <div class="col-md-8">
+            <div class="col-md-7">
               <form action="#" method="post">
-                <div class="fl-name row">
-                  <div class="col-md-6">
-                    <input name="nome" type="text" class="form-control" placeholder="Nom">
+                <div class="row">
+
+                  <div class="col-md-4">
+                    <input name="nom" type="text" class="form-control" placeholder="Nom">
                   </div>
-                  <div class="col-md-6">
-                    <input name="telephone" type="tel" class="form-control" placeholder="Telephone">
+
+                  <div class="col-md-4">
+                    <input name="prenom" type="text" class="form-control" placeholder="Prénom">
+                  </div>
+
+                  <div class="col-md-4">
+                    <input name="email" type="text" class="form-control" placeholder="Email">
                   </div>
                 </div>
-                <input type="text" class="form-control" placeholder="Objet">
-                <textarea name="your-message" id="message" rows="10" class="form-control"
-                          placeholder="Message"></textarea>
+
+                <div class="row">
+
+                  <div class="col-md-12">
+                    <br>
+                      <select name="objet" class="form-control">
+                        <option value="" class="form-control">choisissez votre sujet</option>
+                        <option value="" class="form-control">Devenir membre</option>
+                        <option value="" class="form-control">Commander un ouvrage</option>
+                        <option value="" class="form-control">Devenir partenaire</option>
+                        <option value="" class="form-control">Divers questions</option>
+                        <option value="" class="form-control">Contacter la Directrice de la Publication </option>
+                        <option value="" class="form-control">Envoyer vos manuscrits</option>
+                      </select>
+                  </div>
+
+
+                </div>
+
+                <span id='remainingC' class="orange"></span>
+                  <textarea name="message" rows="10" class="form-control" placeholder="Message"></textarea>
               <div class="mt30">
                 <button type="submit" class="btn-orange">Envoyer</button>
               </div>
               </form>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-5">
               <div class="cotact-details mb30 mt10">
                 <div class="row">
                   <div class="col-md-5">
-                    <i class="fa fa-map-marker orange"></i> <span class="text-bold"> Adresse:</span>
+                    <i class="fa fa-map-marker orange"></i> <span class="text-bold">Domiciliation postale :</span>
                   </div>
                   <div class="col-md-7">
                     <span>68, bd de Port Royal 75005 Paris</span>
@@ -64,7 +89,7 @@
                     <i> <img src="@routes.Assets.at("img/envelope.png")" alt=""></i> <span class="text-bold"> E-mail:</span>
                   </div>
                   <div class="col-md-7">
-                    <span>info@@assonubia.org</span>
+                    <span>info@@associationnubia.com</span>
                   </div>
                 </div>
               </div>
@@ -74,17 +99,7 @@
                     <i class="fa fa-phone orange"></i> <span class="text-bold"> Telephone:</span>
                   </div>
                   <div class="col-md-7">
-                    <span>+ 33 6 24 39 65 03</span>
-                  </div>
-                </div>
-              </div>
-              <div class="cotact-details mb30">
-                <div class="row">
-                  <div class="col-md-5">
-                    <i><img src="@routes.Assets.at("img/fax.png")" alt=""></i> <span class="text-bold"> Télécopie:</span>
-                  </div>
-                  <div class="col-md-7">
-                    <span>+ 33 1 45 35 81 00</span>
+                    <span>+33 6 28 48 85 28</span>
                   </div>
                 </div>
               </div>

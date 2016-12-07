@@ -6,6 +6,10 @@
 GET     /                                       controllers.HomeController.index
 GET     /about                                  controllers.HomeController.about
 GET     /teams                                  controllers.HomeController.teams
+GET     /teams/janna-sow                        controllers.HomeController.teamsJannaSow
+GET     /teams/elsie-augustave                  controllers.HomeController.teamsElsieAugustava
+GET     /teams/mathieu-gbetro                   controllers.HomeController.teamsMathieuGbetro
+
 GET     /contact-us                             controllers.HomeController.contact
 GET     /join-us                                controllers.HomeController.join
 GET     /catalogs                               controllers.HomeController.catalogs

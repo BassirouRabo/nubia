@@ -8,3 +8,5 @@ Contact : contact-us.html
 
 
 "org.hibernate" % "hibernate-entitymanager" % "5.1.0.Final",
+
+@routes.Assets.at("img/book/histoire-et-politique/le-danxome.jpg")

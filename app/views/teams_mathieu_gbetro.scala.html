@@ -1,0 +1,58 @@
+@header("Bureau et Conseil d'administration")
+
+<body>
+  <nav id="main-nav-h" class="navbar navbar-fixed-top default affix wow slideInDown">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+        aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><img src="@routes.Assets.at("img/logo1.png")" alt=""></a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+      @menu()
+      </div>
+    </div>
+  </nav>
+
+
+
+  <section class="mt160">
+    <div class="container wow slideInDown">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Le Bureau</h1>
+          <hr>
+        </div>
+      </div>
+      <div class="row mt50 gray-bg">
+        <div class="col-md-3">
+          <img src="@routes.Assets.at("img/our-team/mathieu-gbetro.jpg")" alt="" class="img-responsive">
+        </div>
+        <div class="col-md-9">
+          <h1 class="mt40">Profil Detail</h1>
+          <ul class="list-unstyled profile-detail">
+            <li>Nom :<span class="pull-right">Mathieu Gbetro</span></li>
+            <li>Poste :<span class="pull-right">Trésorier</span></li>
+          </ul>
+          <div class="clearfix visible-xs-block"></div>
+        </div>
+      </div>
+      <div class="row mt50">
+        <div class="col-md-12">
+          <p class="text-left">Diplômé en gestion, marketing digital et en droit des nouvelles technologies, Mathieu a évolué dans plusieurs entreprises leader du secteur : AOL, Orange et autres.</p>
+          <p class="text-left">Il a récemment, pris la décision de quitter son dernier employeur, Facebook, pour développer les activités digitales d’une holding malienne et assouvir son envie de contribuer au développement du continent africain.</p>
+          <p class="text-left">Fort d’un métissage Africain, Antillais et Européen et passionné de récits historiques, Mathieu a répondu présent à l’appel de Nubia, en tant que Trésorier, afin de permettre une gestion des ressources financières transparente.</p>
+          <hr class="thin">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+@footer()

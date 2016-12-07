@@ -27,31 +27,30 @@
     <div class="container">
         <div class="row wow slideInDown">
             <div class="col-md-12">
-                <h1>@books.get(0).getCategory</h1>
+                <h5 class="fz-16" style="display: inline-block"><a href="/catalogs" class="orange" title="Le catalogue">Le catalogue</a> ></h5>
+                <h5 class="fz-16" style="display: inline-block">@if(books.size() > 0 ) {
+                    @books.get(0).getCategoryTitle
+                }</h5>
                 <hr>
             </div>
         </div>
 
         @for(book <- books) {
-            <div class="row mt40 list-view wow slideInDown">
-                <div class="col-md-5 no-padding">
+            <div class="row mt40 list-view wow slideInDown gray-bg">
+                <div class="col-md-2 no-padding">
                     <div class="quick-view-layer">
-                        <img src="@routes.Assets.at("img/shop-list2.jpg")" alt="">
+                        <img src="@routes.Assets.at("img/book/"+book.getCategory+"/"+book.getImage+".jpg")" alt="@book.getTitle">
                     </div>
                 </div>
-                <div class="col-md-7 no-padding gray-bg">
+                <div class="col-md-10 no-padding">
                     <div class="list-view-content">
-                        <h4 class="text-bold text-uppercase">@book.getTitle</h4>
-                        <p>@book.getOverview</p>
+                        <h5 class="fz-16 mt30">@book.getTitle</h5>
+                        <h5 class="orange fz-16">par @book.getAuteur</h5>
+                        <p><br>@Html(book.getOverview)</p>
                     </div>
-                    <div class="list-view-content-bottom">
-                        <div class="shop-cart pull-right">
-                            <a href="/catalogs/@book.getCategory/books/@book.getId">Lire la suite</a>
-                        </div>
-                        <div class="clearfix clearfix visible-sm-block visible-xs-block "></div>
+                    <div class="social-detail mt20 pull-right">
+                        <a href="/catalogs/@book.getCategory/books/@book.getId">voir detail</a>
                     </div>
-
-
                 </div>
             </div>
         }

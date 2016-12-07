@@ -3282,3 +3282,6 @@ ul.profile-detail > li > span{
 	color: #fff;
 
 }
+
+input[type=text] {height: 52px;}
+input[type=submit] {height: 78px;}

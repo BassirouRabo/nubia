@@ -22,51 +22,29 @@
       </div>
     </nav>
 
-<section class="mt160">
-  <div class="container wow slideInDown">
-    <div class="row">
-      <div class="col-md-12">
-          <h1><a href="/catalogs/@bookSingle.getCategory/books" title="" >@bookSingle.getCategory</a> </h1>
-      </div>
-    </div>
-    <div class="row mt30">
-      <div class="col-md-8 mb20">
-        <img src="@routes.Assets.at("img/product-detail.jpg")" alt="" class="img-responsive">
-          <h3>@bookSingle.getTitle</h3>
-          <p>@bookSingle.getDescription</p>
-      </div>
-      <div class="col-md-4">
-
-          @for(book <- books) {
-              @if(book != bookSingle) {
-                  @if(books.get(0) == book) {
-                      <div class="sidebar-product product text-center">
-                          <img class="img-responsive" src="@routes.Assets.at("img/shop1.jpg")" alt="">
-                          <h5 class="text-uppercase">Educational toys for kids</h5>
-                          <div class="clearfix">  </div>
-                          <div class="shop-cart">
-                              <a href="/catalogs/@book.getCategory/books/@book.getId">Lire la suite</a>
-                          </div>
-                          <div class="clearfix"></div>
-                      </div>
-                  } else {
-                      <div class="sidebar-product text-center product mt40">
-                          <img class="img-responsive" src="@routes.Assets.at("img/shop2.jpg")" alt="">
-                          <h5 class="text-uppercase">adult literacy classes</h5>
-                          <div class="clearfix">  </div>
-                          <div class="shop-cart">
-                              <a href="/catalogs/@book.getCategory/books/@book.getId">Lire la suite</a>
-                          </div>
-                      </div>
-                  }
-              }
-
-          }
-
-
-      </div>
-    </div>
-  </div>
-</section>
+    <section class="mt160">
+        <div class="container wow slideInDown">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5 class="fz-16" style="display: inline-block"><a href="/catalogs" class="orange" title="Le catalogue">Le catalogue</a> ></h5>
+                    <h5 class="fz-16" style="display: inline-block"><a href="/catalogs/@bookSingle.getCategory/books" class="orange" title="Le catalogue">@bookSingle.getCategoryTitle</a> ></h5>
+                    <hr>
+                </div>
+            </div>
+            <div class="row mt50 gray-bg">
+                <div class="col-md-4">
+                    <img src="@routes.Assets.at("img/book/"+bookSingle.getCategory+"/"+bookSingle.getImage+".jpg")" alt="@bookSingle.getTitle" class="img-responsive">
+                </div>
+                <div class="col-md-8">
+                    <ul class="list-unstyled profile-detail">
+                        <li>Titre :<span class="pull-right">@bookSingle.getTitle</span></li>
+                        <li>Auteur :<span class="pull-right">@bookSingle.getAuteur</span></li>
+                    </ul>
+                    <p class="text-left">@Html(bookSingle.getDescription)</p>
+                    <div class="clearfix visible-xs-block"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     @footer()

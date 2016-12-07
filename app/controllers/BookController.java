@@ -21,7 +21,6 @@ public class BookController extends Controller {
         if(null == bookList) {
             bookList = new ArrayList<>();
         }
-
         return ok(books.render(bookList));
     }
 

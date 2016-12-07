@@ -17,10 +17,14 @@ public class Book {
     private Long id;
     @Column(name = "catagory")  //
     private String category;
+    @Column(name = "catagory_title")  //
+    private String categoryTitle;
     @Column(name = "link")
     private String link;
     @Column(name = "title")
     private String title;
+    @Column(name = "auteur")
+    private String auteur;
     @Column(name = "overview", length = 5000)
     private String overview;
     @Column(name = "description", length = 5000)
@@ -34,23 +38,6 @@ public class Book {
     public Book() {
     }
 
-    /**
-     * Constructor with arguments
-     * @param category
-     * @param link
-     * @param title
-     * @param overview
-     * @param description
-     * @param image
-     */
-    public Book(String category, String link, String title, String overview, String description, String image) {
-        this.category = category;
-        this.link = link;
-        this.title = title;
-        this.overview = overview;
-        this.description = description;
-        this.image = image;
-    }
 
     /**
      * Find books
@@ -106,6 +93,14 @@ public class Book {
         this.category = category;
     }
 
+    public String getCategoryTitle() {
+        return categoryTitle;
+    }
+
+    public void setCategoryTitle(String categoryTitle) {
+        this.categoryTitle = categoryTitle;
+    }
+
     public String getLink() {
         return link;
     }
@@ -120,6 +115,14 @@ public class Book {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getAuteur() {
+        return auteur;
+    }
+
+    public void setAuteur(String auteur) {
+        this.auteur = auteur;
     }
 
     public String getOverview() {

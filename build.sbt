@@ -6,7 +6,7 @@ lazy val `nubia` = (project in file(".")).enablePlugins(PlayJava)
 
 scalaVersion := "2.11.7"
 
-libraryDependencies ++= Seq( jdbc , cache , ws  , javaJdbc , specs2 % Test, javaJpa, "org.hibernate" % "hibernate-entitymanager" % "5.1.0.Final", "org.postgresql" % "postgresql" % "9.4-1201-jdbc41")
+libraryDependencies ++= Seq( jdbc , cache , ws  , javaJdbc , specs2 % Test, javaJpa, "org.hibernate" % "hibernate-entitymanager" % "5.1.0.Final", "org.postgresql" % "postgresql" % "9.4-1201-jdbc41", "com.typesafe.play" %% "play-mailer" % "5.0.0")
 
 unmanagedResourceDirectories in Test <+=  baseDirectory ( _ /"target/web/public/test" )  
 

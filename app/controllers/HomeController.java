@@ -21,6 +21,18 @@ public class HomeController extends Controller {
         return ok(teams.render());
     }
 
+    public Result teamsJannaSow() {
+        return ok(teams_janna_sow.render());
+    }
+
+    public Result teamsElsieAugustava() {
+        return ok(teams_elsie_augustava.render());
+    }
+
+    public Result teamsMathieuGbetro() {
+        return ok(teams_mathieu_gbetro.render());
+    }
+
     public Result catalogs() {
         return ok(catalogs.render());
     }
