@@ -45,4 +45,8 @@ public class HomeController extends Controller {
         return ok(join_us.render());
     }
 
+    public Result coming() {
+        return ok(coming.render());
+    }
+
 }
